@@ -38,14 +38,14 @@ python plot.py
 After this command, it will show you some plots similar to those in `plots/`.
 
 <p align="center">
-      <img src="robosuite/plots/Old_Door_Old_Door_Close.png" alt="Door Open/Close Inward" width="33%"/>
-      <img src="robosuite/plots/Door_Door_Close.png" alt="Door Open/Close Outward" width="33%"/>
-      <img src="robosuite/plots/TwoArmPegInHole_TwoArmPegRemoval" alt="Peg Insertion/Removal" width="33%"/>
+      <img src="robosuite/plots/Old_Door_Old_Door_Close.png" alt="Door Open/Close Inward" width="30%"/>
+      <img src="robosuite/plots/Door_Door_Close.png" alt="Door Open/Close Outward" width="30%"/>
+      <img src="robosuite/plots/TwoArmPegInHole_TwoArmPegRemoval.png" alt="Peg Insertion/Removal" width="30%"/>
 </p>
 <p align="center">
-      <img src="robosuite/plots/Stack_UnStack.png" alt="Block Stack/Unstack" width="33%"/>
-      <img src="robosuite/plots/NutAssemblyRound_NutDisAssemblyRound.png" alt="Nut Assembly/Disassembly" width="33%"/>
-      <img src="robosuite/plots/IQM_robosuite.png" alt="IQM_robosuite" width="33%"/>
+      <img src="robosuite/plots/Stack_UnStack.png" alt="Block Stack/Unstack" width="30%"/>
+      <img src="robosuite/plots/NutAssemblyRound_NutDisAssemblyRound.png" alt="Nut Assembly/Disassembly" width="30%"/>
+      <img src="robosuite/plots/IQM_robosuite.png" alt="IQM_robosuite" width="30%"/>
 </p>
 
 ## Multi-Task TR-SAC in MetaWorld (fixed goals)
