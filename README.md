@@ -26,7 +26,9 @@ python train_sac_agentenv_2agents_state.py --reward_shaping f --use_reversed_tra
 ```
 You may specify any value for `--seed`. 
 Our reported results in the paper were obtained using five seeds from 1 to 5.
+
 Other task pairs that can replace ("Door", "Door_Close"): Old_Door, Old_Door_Close (door open/close inward); NutAssemblyRound, NutDisAssemblyRound (nut assembly/disassembly); TwoArmPegInHole, TwoArmPegRemoval (peg insertion/removal); Stack, UnStack (block stacking/unstacking).
+
 Results (log files and saved videos) obtained from the above experiment can be found in `runs/{algo_name}/{env_name}_seed{--seed}/`. Move them to `results/{algo_name}/` by running the following command.
 ```
 mv runs/{algo_name}/{env_name}_seed*/ results/{algo_name}/
