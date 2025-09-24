@@ -34,11 +34,12 @@ Results (log files and saved videos) obtained from the above experiment can be f
 mv runs/{algo_name}/{env_name}_seed*/ results/{algo_name}/
 ```
 
-Then you can run `plot.py` to visualize the results. You may search for `env_names` in `plot.py` and change them.
+Then you can run `plot.py` and `plot_metrics.py` to visualize the results and plot the aggregated performance. You may search for `env_names` in `plot.py` and change them.
 ```
 python plot.py
+python plot_metrics.py
 ```
-After this command, it will show you some plots similar to those in `plots/`.
+After these commands, it will show you some plots similar to those in `plots/`.
 
 <p align="center">
       <img src="robosuite/plots/Old_Door_Old_Door_Close.png" alt="Door Open/Close Inward" width="30%"/>
