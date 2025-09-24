@@ -997,14 +997,4 @@ if __name__ == '__main__':
                 imageio.mimsave(uri=train_video_path, ims=frames, fps=20, macro_block_size = 1)
                 print('video saved at {} in {:.3f}s'.format(train_video_path, time.time()-video_start))
             
-            if (i+1) % save_model_interval == 0:
-                actor_path = os.path.join(model_dir, 'actor_episode{}.pt'.format(i+1))
-                critic_path = os.path.join(model_dir, 'critic_episode{}.pt'.format(i+1))
-                forward_reward_path = os.path.join(model_dir, 'forward_reward_episode{}.pt'.format(i+1))
-                reverse_reward_path = os.path.join(model_dir, 'reverse_reward_episode{}.pt'.format(i+1))
-                forward_dynamics_path = os.path.join(model_dir, 'forward_dynamics_episode{}.pt'.format(i+1))
-                inverse_dynamics_path = os.path.join(model_dir, 'inverse_dynamics_episode{}.pt'.format(i+1))
-                agent.save(critic_path=critic_path, actor_path=actor_path, forward_reward_path=forward_reward_path, reverse_reward_path=reverse_reward_path, forward_dynamics_path=forward_dynamics_path, inverse_dynamics_path=inverse_dynamics_path)
-                agent.replay_buffer.save(replay_buffer_dir)
-        
         i += 1

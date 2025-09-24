@@ -24,11 +24,12 @@ Train two SAC agents on robosuite for a pair of reversible tasks (door open/clos
 ```
 python train_sac_agentenv_2agents_state.py --reward_shaping f --use_reversed_transition t --filter_type state_max_diff --diff_threshold 0.01 --use_reversed_reward t --use_forward_reward t --reward_model_type potential --potential_type linear --n_demo 10 --env1_name Door --env2_name Door_Close --seed 1
 ```
+You may specify any value for `--seed`. 
+Our reported results in the paper were obtained using five seeds from 1 to 5.
 Other task pairs that can replace ("Door", "Door_Close"): Old_Door, Old_Door_Close (door open/close inward); NutAssemblyRound, NutDisAssemblyRound (nut assembly/disassembly); TwoArmPegInHole, TwoArmPegRemoval (peg insertion/removal); Stack, UnStack (block stacking/unstacking).
-
 Results (log files and saved videos) obtained from the above experiment can be found in `runs/{algo_name}/{env_name}_seed{--seed}/`. Move them to `results/{algo_name}/` by running the following command.
 ```
-mv runs/{algo_name}/{env_name}_seed{--seed}/ results/{algo_name}/
+mv runs/{algo_name}/{env_name}_seed*/ results/{algo_name}/
 ```
 
 Then you can run `plot.py` to visualize the results. You may search for `env_names` in `plot.py` and change them.
