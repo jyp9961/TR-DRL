@@ -184,6 +184,6 @@ if __name__ == '__main__':
                 plt.title('rewards {}'.format(plot_env_name))
             
     plt.subplots_adjust(hspace = 0.3)
-    plt.savefig('plots/{}_{}'.format(env_names[0], env_names[1]))
-    plt.close()
-    # plt.show()
+    plt.show()
+    # plt.savefig('plots/{}_{}'.format(env_names[0], env_names[1]))
+    # plt.close()
